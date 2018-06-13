@@ -60,7 +60,7 @@
 
     <p id="show"></p>
     <p id='lorem' class="lorem"> </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <p onclick="this.innerHTML='Woah! No one told you to click this!'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -81,8 +81,15 @@
         var y =
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum "
         document.getElementById('lorem').innerHTML = x+y;
+
+        function letsSeeThatDate(){
+            document.getElementById('time').innerHTML = Date();
+        }
     </script>
-    }
+
+    <button class="button" onclick="letsSeeThatDate();">This might be the time?</button>
+    
+    <p id="time" class="button"></p>
 </body>
 
 </html>

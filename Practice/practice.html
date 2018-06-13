@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-    <title>Possibly A Blog</title>  <!--What is seen in the tab-->
+    <title>Possibly A Blog</title>
+    <!--What is seen in the tab-->
 
-    <link rel="stylesheet" type="text/css" href="practice.css" /> <!--This links the html and css files-->
-    <script src="practice.js"></script>   <!--This links the html and js files-->
+    <link rel="stylesheet" type="text/css" href="practice.css" />
+    <!--This links the html and css files-->
+ 
 
 </head>
 
 <body>
-<div >
-    <img class="snowman" src="https://previews.123rf.com/images/zetwe/zetwe1210/zetwe121000011/15668963-happy-snowman.jpg" alt="">
-</div>
-    <h1>I'm a Heading</h1>  <!--First Heading-->
-    <p id= 'js'></p>
-        <button class="button" type="button" onclick="showMeJs()">I'm a button</button> <!--Creates a button-->
+    <div>
+        <!--cute pic of snowman place with html and not css-->
+        <img class="snowman" src="https://previews.123rf.com/images/zetwe/zetwe1210/zetwe121000011/15668963-happy-snowman.jpg" alt="">
+    </div>
+    <h1>I'm a Heading</h1>
+    <!--First Heading-->
+
+    <p id='js'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <button class="button" type="button" onclick="showMeJs()">I'm a button</button>
+    <!--Creates a button-->
     <div class='list'>
         <h2>Let's Make Some Lists</h2>
-    <ul>Cool TV Shows</ul> <!--Unordered list. Not numbered-->
-    <li>S.A.O.</li>
-    <li>New Girl</li>
-    <li>Gilmore Girls</li>
-    <li>The Office</li>
-    <li>Parks and Recreation</li>
-    <li>Fairy Tale</li>
-    <li>Violet Evergarden</li>
-    <li>There's too many...</li>
-</div>
-<div class='jsFun'></div>
-    <h2></h2>
-    <h2></h2>
+        <ul>Cool TV Shows</ul>
+        <!--Unordered list. Not numbered-->
+        <li>S.A.O.</li>
+        <li>New Girl</li>
+        <li>Gilmore Girls</li>
+        <li>The Office</li>
+        <li>Parks and Recreation</li>
+        <li>Fairy Tale</li>
+        <li>Violet Evergarden</li>
+        <li>There's too many...</li>
+    </div>
+    <div class='jsFun'></div>
+    <p id="demo1"></p>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <span class="green">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </span>
+
+    <p id="show"></p>
+    <p id='lorem' class="lorem"> </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <script>
+        function showMeJs() {
+            // adds text to selected id with onclick of button 
+            document.getElementById('js').innerHTML =
+                "Show Me Some JS!";
+        }
+        var a, b, c;
+        a = 1;
+        b = 2;
+        c = a + b;
+        document.getElementById("demo1").innerHTML = c;
+
+        var x =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        var y =
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum "
+        document.getElementById('lorem').innerHTML = x+y;
+    </script>
+    }
 </body>
 
 </html>
